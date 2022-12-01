@@ -251,18 +251,20 @@ footer{
 .footer-links .links{
     margin-top: 30px;
 }
-.footer-links p{
-    margin-bottom: 10px;
-    color: #eee;
-    font-size: 14px;
-}
 .footer-links .icon{
     font-size:16px;
     margin-right: 20px;
 }
-
-.footer-links .links .icon:hover,
-.footer-links .links p:hover{
+.footer-links .links li{
+    margin-bottom: 10px;
+    font-size: 14px;
+    list-style: none;
+}
+.footer-links .links li a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer-links li a:hover{
     color: #ff342f;
 }
 .footer-line{
