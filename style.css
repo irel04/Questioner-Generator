@@ -9,6 +9,10 @@ body{
     height: 100vh;
     background: #EFE9F7;
 }
+.home-section img{
+    width: 100%;
+    background-size: cover;
+}
 .sidebar{
     position: fixed;
     top: 0;
