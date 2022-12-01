@@ -6,13 +6,16 @@
     padding: 0;
 }
 body{
-    height: 100vh;
-    background: #EFE9F7;
+    min-width: 100%;
+    background-color: #E4E9F7;
 }
-.home-section img{
+.home-page img{
     width: 100%;
+    background-position: fixed;
     background-size: cover;
 }
+
+/* Navigation Bar */
 .sidebar{
     position: fixed;
     top: 0;
@@ -120,6 +123,53 @@ header .image-text .header-text{
     color: #fff
 }
 
+/* About Section */
+section .about-section{
+    height: auto;
+}
+.line1
+{
+    float: none;
+    border-top: 4px solid white;
+    width: 100%;
+    justify-content: center;
+    visibility: hidden;
+}
+.about-title{
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 2px gray;
+}
+.about-box
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about-box .box{
+    float: left;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 40px 20px 80px 80px;
+    box-shadow: 20px 40px 45px rgba(0,0,0,0.1);
+}
+.about-box .box h3{
+    position: relative;
+    font-size: 32px;
+    z-index: 2;
+    padding: 40px 20px 10px 20px;
+}
+.about-box .box p{
+    position: relative;
+    font-size: 14px;
+    padding: 5px 20px 20px 20px
+}
+
+
 /* Footer */
 footer{
     width: 100%;
@@ -215,8 +265,9 @@ footer{
 .footer-links .links p:hover{
     color: #ff342f;
 }
-.line{
+.footer-line{
     margin: 70px 40px 0 120px;
+    background: #fff;
 }
 .footer-logo{
     margin: 70px 0 20px 0;
