@@ -10,18 +10,15 @@
         <script src="https://kit.fontawesome.com/a133e8f375.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="home-section">
-            <img src="bg.jpg">
-        </div>
         <!-- Navigation Bar -->
-        <nav class="sidebar">
+        <nav class="sidebar close">
             <header>
                 <div class="image-text">
                     <span class="logo">
                         <img src="logo.jpg">
                     </span>
 
-                    <div class="header-text">
+                    <div class="header-text text">
                         <span class="name">QuizMaster</span>
                         <span class="sub-name">Question Generator</span>
                     </div>
@@ -32,25 +29,77 @@
             <div class="menu-bar">
                 <div class="menu">
                     <ul class="menu-links">
-                        <li class="nav-link"><a href="#">
+                        <li class="nav-link"><a href="#home">
                             <i class="fa-solid fa-house icon"></i>
-                            <span class="text nav-text">Home</span>
+                            <span class="text nav-text text">Home</span>
                         </a></li>
-                        <li class="nav-link"><a href="#">
-                            <i class="fa-solid fa-folder icon"></i>                            
-                            <span class="text nav-text">Projects</span>
-                        </a></li>
-                        <li class="nav-link"><a href="#">
+                        <li class="nav-link"><a href="#about">
                             <i class="fa-solid fa-user icon"></i>
-                            <span class="text nav-text">About</span>
+                            <span class="text nav-text text">About</span>
                         </a></li>
-                        <li class="nav-link"><a href="#">
+                        <li class="nav-link"><a href="#project">
+                            <i class="fa-solid fa-folder icon"></i>                            
+                            <span class="text nav-text text">Projects</span>
+                        </a></li>  
+                        <li class="nav-link"><a href="#contact">
                             <i class="fa-solid fa-paper-plane icon"></i>                            
-                            <span class="text nav-text">Contact</span>
+                            <span class="text nav-text text">Contact</span>
                         </a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <script>src="script.js" </script>
+        <section id="home">
+            <div class="home-section">
+                <img src="quiz-bg.jpg">
+            </div>
+        </section>
+        <footer id="contact">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="footer-about">
+                        <h3>About Us</h3>
+                        <p class="about-us">We are currently a sophomore students at <br>Polytechnic University of the Philippines - 
+                            <br> Main Campus majoring in Computer Engineering. <br> Our team aims to design and develop a 
+                            stunning <br> and functional websites with clean, elegant, and <br> efficient code. 
+                        </p>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/Charina.Carpio.Vallecera">
+                                <i class="fa-brands fa-facebook icon"></i></a>
+                            <a href="https://twitter.com/Theiskie">
+                                <i class="fa-brands fa-twitter icon"></i></a>
+                            <a href="https://www.instagram.com/liyaaaaaan_/">
+                                <i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://github.com/irel04">
+                                <i class="fa-brands fa-github icon"></i></a>
+                            <a href="mailto: kianirel56@gmail.com">
+                                <i class="fa-solid fa-envelope icon"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>Get in Touch</h3>
+                        <div class="contact">
+                            <p><i class="fa-solid fa-location-dot icon"></i>Anonas, Sta. Mesa, Manila</p>
+                            <p><i class="fa-solid fa-phone icon"></i>(+63) 955 672 7785</p>
+                            <p><i class="fa-solid fa-envelope icon"></i>support@gmail.com</p>
+                            <p><i class="fa-regular fa-clock icon"></i>Mon & Thur, 11AM - 2PM</p>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h3>Quick Links</h3>
+                        <div class="links">
+                            <p><i class="fa-solid fa-house icon"></i>Home</p>
+                            <p><i class="fa-solid fa-folder icon"></i>Projects</p>
+                            <p><i class="fa-solid fa-user icon"></i>About</p>
+                            <p><i class="fa-solid fa-paper-plane icon"></i>Contact</p>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <hr class="line">
+            <center class="footer-logo"><img src="syntaXDev.png" width="180" height="80"></center>
+            <center class="footer-copyright"><p> All Rights Reserved by syntaXDeveloper @2022</p></center>
+        </footer>
     </body>
 </html>
