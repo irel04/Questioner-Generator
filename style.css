@@ -34,6 +34,7 @@ body{
     padding: 10px 14px;
     background: #FFF;
     transition: all 0.4s ease;
+    z-index: 9999;
 }
 .sidebar .text{
     font-size: 16px;
@@ -147,7 +148,10 @@ header .image-text .header-text{
 
 /* About Section */
 section .about-section{
+    background: #111;
+    width: 100%;
     height: auto;
+    margin-left: 180px;
 }
 .line1
 {
@@ -164,29 +168,28 @@ section .about-section{
     text-align: center;
     text-shadow: 1px 1px 2px gray;
 }
-.about-box
-{
+.about-container{
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.about-box .box{
+.about-container .box{
     float: left;
     position: relative;
     width: 500px;
-    height: 500px;
-    margin: 40px 20px 80px 80px;
+    height: auto;
+    margin: 55px 20px 80px 80px;
     box-shadow: 20px 40px 45px rgba(0,0,0,0.1);
     z-index: -1;
 }
-.about-box .box h3{
+.about-container .box h3{
     position: relative;
     font-size: 32px;
     z-index: 2;
     padding: 40px 20px 10px 20px;
 }
-.about-box .box p{
+.about-container .box p{
     position: relative;
     font-size: 14px;
     padding: 5px 20px 20px 20px
@@ -195,42 +198,33 @@ section .about-section{
 
 /* Footer */
 footer{
-    width: 100%;
-    height: 80vh;
+    width: auto;
+    height: auto;
     position: relative;
     background: #111;
     z-index: 0;
     padding-top: 100px;
+    margin-left: 80px;
 }
-.container{
-    width: 100%;
-    max-width: 1320px;
-    margin: 0 auto;
-    padding: 0 12px;
-}
-.wrapper{
+.footer-container{
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
 }
-.footer-about h3, .footer-contact h3, .footer-links h3{
+.footer-container .box{
+    float: left;
+    position: relative;
+    height: 300px;
+    width: 310px;
+    margin: 20px 0 50px 80px;
+    justify-content: center;
+}
+.footer-container h3{
     position: relative;
     font-size: 22px;
     font-weight: 600;
     color: #eee;
-}
-.footer-about h3::after, .footer-contact h3::after, .footer-links h3::after{
-    position: absolute;
-    content: "";
-    width: 50px;
-    height: 2px;
-    left: 0;
-    bottom: 0;
-    background: #eeeeee;
-}
-.footer-about{
-    margin-left: 100px;
+    margin-top: 20px;
 }
 .footer-about .about-us{
     color: #eee;
@@ -238,38 +232,40 @@ footer{
     font-size: 14px;
     font-weight: 200;
 }
-.footer-social a{
+.footer-social{
+    list-style: none;
+    display: flex; 
+}
+.footer-social li{
+    margin: 20px 20px 0 0;
+    text-decoration: none;
+}
+.footer-social li a{
+    padding: 2px;
     text-align: center;
+    display: inline-block;
     color: #fff;
     font-size: 28px;
     width: 40px;
     height: 40px;
     border: 1px solid #fff;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
     border-radius: 50%;
     margin-top: 30px;
-    margin-right: 20px;
 }
-.footer-social a:hover{
+.footer-social li a:hover{
     color: #fff;
-    background: linear-gradient(to right, #ff342f, #A54DFF); 
 }
 .footer-contact .contact{
     margin-top: 30px;
 }
 .footer-contact p{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: #eee;
     font-size: 14px;
 }
 .footer-contact .icon{
     font-size:16px;
-    margin-right: 5px;
-}
-.footer-links{
-    margin-right: 100px;
+    margin-right: 20px;
 }
 .footer-links .links{
     margin-top: 30px;
@@ -279,7 +275,7 @@ footer{
     margin-right: 20px;
 }
 .footer-links .links li{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-size: 14px;
     list-style: none;
 }
@@ -289,7 +285,6 @@ footer{
 }
 
 .footer-line{
-    margin: 70px 40px 0 120px;
     background: #fff;
 }
 .footer-logo{
