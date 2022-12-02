@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+:root{
+    --tran-03: all ease 0.2s ease ;
+    --tran-03: all ease 0.3s ease ;
+    --tran-04: all ease 0.4s ease ;
+    --tran-05: all ease 0.5s ease ;
+}
+
+
 *{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -25,6 +33,14 @@ body{
     padding: 10px 14px;
     background: #FFF;
     transition: all 0.4s ease;
+}
+.sidebar .text{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+    transition: var(--tran-03);
+    white-space: nowrap;
+    opacity: 1;
 }
 .sidebar.close{
     width: 50px
@@ -71,7 +87,8 @@ header .image-text .header-text{
     position: absolute;
     top: 50%;
     right: -25px;
-    transform: translateY(-50%);
+
+    transform: translateY(-50%) rotate(180deg);
     height: 25px;
     width: 25px;
     font-size: 12px;
@@ -83,6 +100,10 @@ header .image-text .header-text{
     align-items: center;
     justify-content: center;
 }
+.sidebar.close header .toggle{
+    transform: translateY(-50%);
+}
+
 .sidebar .menu-bar{
     margin-top: 50px;
 }
@@ -156,6 +177,7 @@ section .about-section{
     height: 500px;
     margin: 40px 20px 80px 80px;
     box-shadow: 20px 40px 45px rgba(0,0,0,0.1);
+    z-index: -1;
 }
 .about-box .box h3{
     position: relative;
