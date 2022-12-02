@@ -17,10 +17,52 @@ body{
     min-width: 100%;
     background-color: #E4E9F7;
 }
-.home-page img{
+.home-section{
+    width: auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+}
+.home-section img{
     width: 100%;
-    background-position: fixed;
     background-size: cover;
+}
+.home-page{
+    position: absolute;
+    background: #fff;
+    padding: 10px 50px 10px 50px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.231);
+}
+.home-page h2{
+    position: relative;
+    font-size: 12vw;
+    color: #E4E9F7;
+    -webkit-text-stroke: 0.3vw #fff;
+}
+.home-page h2::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: -webkit-linear-gradient(#ff342f, #A54DFF); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0vw #fff;
+    border-right: 20px solid #000;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+@keyframes animate{
+    0%,20%,100%{
+        width: 0;
+    }
+    60%,80%{
+        width: 100%;
+    }
 }
 
 
@@ -64,13 +106,13 @@ body{
     align-items: center;
 }
 .sidebar .logo{
-    margin-top: 40px;
+    margin-top: 55px;
     min-width: 65px;
     display: flex;
     align-items: center;
 }
 header .image-text .header-text{
-    margin-top: 40px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column; 
 }
@@ -95,7 +137,7 @@ header .image-text .header-text{
     height: 25px;
     width: 25px;
     font-size: 12px;
-    margin-top: 20px;
+    margin-top: -10px;
     color: #fff;
     background: linear-gradient(to right, #ff342f, #A54DFF);
     border-radius: 50%;
@@ -106,14 +148,13 @@ header .image-text .header-text{
 .sidebar.close header .toggle{
     transform: translateY(-50%);
 }
-
 .sidebar .menu-bar{
     margin-top: 50px;
 }
 .sidebar li{
     height: 50px;
     color: #fff;
-    margin-top: 10px;
+    margin-bottom: 30px;
     align-items: center;
 }
 .sidebar li a{
@@ -149,7 +190,7 @@ header .image-text .header-text{
 
 
 /* About Section */
-section{
+.about-section{
     width: auto;
     height: auto;
     margin-left: 50px;
@@ -182,7 +223,6 @@ section{
     height: auto;
     margin: 50px 20px 80px 50px;
     padding: 5px;
-    z-index: -1;
 }
 .about-container .box img{
     width: 100%;
@@ -198,6 +238,117 @@ section{
     position: relative;
     font-size: 14px;
     padding: 5px 5px 10px 5px
+}
+.about-container .box .create{
+    margin-top: 10px;
+    width: 120px;
+    font-size: 14px;
+    background: none;
+    border: 2px solid #111;
+    border-radius: 15px;
+    padding: 10px;
+}
+.about-container .box a{
+    color: #000;
+    text-decoration: none;
+}
+.about-container .box .create .icon{
+    margin-right: 10px;
+}
+.about-container .box .create:hover{
+    background: -webkit-linear-gradient(#ff342f, #A54DFF); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Project CSS */
+.project-section{
+    width: auto;
+    position: relative;
+    margin-left: 80px;
+    height: 100vh;
+}
+.project-header{
+    background-color: #111;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 6.5rem;
+    
+}
+.project-header h3{
+    position: relative;
+    top: 30px;
+    font-size: 30px;
+    background: -webkit-linear-gradient(#ff342f, #A54DFF); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.project-header button{
+    position: relative;
+    top: 30px;
+    left: 20rem;
+    border-radius: 1rem;
+    border-color: #eee;
+    cursor: pointer;
+    height: 2.5rem;
+}
+.quiz-form{
+    top: 5rem;
+    position: relative;
+    left: 10rem;
+}
+.quiz-form input{
+    position: absolute;
+    left: 12rem;
+    width: 300px;
+    height: 30px;
+}
+.quiz-form div{
+    margin-top: 30px;
+}
+div>input{
+    width: 600px;
+}
+.add-btn{
+    position: relative;
+}
+.save-btn{
+    position: relative;
+    margin-left: 2rem ;
+}
+.save-add_container{
+    top: 30px;
+    position: relative;
+    margin-left: 35rem;
+}
+.list-of-questions{
+    position: relative;
+    top: 10rem;
+    left: 10rem;
+}
+.list-of-questions ul{
+    list-style: none;
+}
+.list-of-questions ul li{
+    position: relative;
+    width: 600px;
+    background-color: wheat;
+    line-height: 40px;
+    margin: 5px 0;
+}
+.list-of-questions ul li span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    text-align: center;
+    background-color: #ff342f;
+}
+.list-of-questions ul li .delete-icon{
+    color: #fff;
 }
 
 
@@ -300,7 +451,9 @@ footer{
     color: #fff;
 }
 .footer-links li a:hover{
-    color: #ff342f;
+    background: -webkit-linear-gradient(#ff342f, #A54DFF); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .footer-line{
     margin-top: 20px;
@@ -313,89 +466,9 @@ footer{
 .footer-copyright{
     color: #fff;
     font-weight: 300;
+    margin-top: 40px;
 }
-
-
-/* Project CSS */
-.project-section{
-    position: relative;
-    width: 100%;
-    height: 768px;
-    background-color: #FFF;    
-    
-}
-.project-header{
-    background-color: #766C5F;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 5rem;
-    
-}
-.project-header h1{
-    position: relative;
-    top: 23px;
-    left: 4rem;
-}
-.project-header button{
-    position: relative;
-    left: 20rem;
-    top: 20px;
-    border-radius: 1rem;
-    border-color: #eee;
-    cursor: pointer;
-    height: 2.5rem;
-}
-.quiz-form{
-    top: 5rem;
-    position: relative;
-    left: 10rem;
-}
-.quiz-form input{
-    position: absolute;
-    left: 12rem;
-    width: 300px;
-    height: 30px;
-}
-.quiz-form div{
-    margin-top: 30px;
-}
-div>input{
-    width: 600px;
-}
-.add-btn{
-    position: relative;
-}
-.save-btn{
-    position: relative;
-    margin-left: 2rem ;
-}
-.save-add_container{
-    top: 30px;
-    position: relative;
-    margin-left: 35rem;
-}
-.list-of-questions{
-    position: relative;
-    top: 10rem;
-    left: 10rem;
-}
-.list-of-questions ul{
-    list-style: none;
-}
-.list-of-questions ul li{
-    position: relative;
-    width: 600px;
-    background-color: wheat;
-    line-height: 40px;
-    margin: 5px 0;
-}
-.list-of-questions ul li span{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50px;
-    text-align: center;
-    background-color: #ff342f;
+.bottom-line{
+    margin-top: 50px;
+    visibility: hidden;
 }

@@ -7,13 +7,19 @@
         <link rel="stylesheet" href="style.css"> 
 
         <!-- Icons-->
-        <script src="https://kit.fontawesome.com/a133e8f375.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a133e8f375.js" crossorigin="anonymous"></script>    
     </head>
     <body>
         <!-- HINDI PA FINAL YUNG SA HOME PAGE-->
-        <div id="home" class="home-page">
-            <img src="images/bg.jpg">
-        </div>
+        <section class="home-section">
+            <div id="home" class="bg">
+                <img src="images/bg2.jpg">
+            </div>
+            <div class="home-page">
+                <h2 data-text="quizMASTER">quizMASTER</h2>
+            </div>
+        </section>
+        
         <!-- Navigation Bar -->
         <nav class="sidebar close">
             <header>
@@ -66,6 +72,9 @@
                     <h3>Easily create and publish interactive content.</h3>
                     <p>With Quiz Maker - interactive quizzes, questionnaires, and much more 
                         can be easily built without having to write any code.</p>
+                    
+                    <a href="#project"><p class="create">
+                        <i class="fa-solid fa-arrow-down-long icon"></i>Create a Quiz</p></a>
                 </div>
             </div>
         </section>
@@ -73,7 +82,7 @@
         <!-- PROJECT SECTION-->
         <section class="project-section" id="project">
             <div class="project-header">
-                <h1>Create a Quiz</h1>
+                <h3>CREATE A QUIZ</h3>
                 <button type="submit" onclick="">Discard</button>
             </div>
             <div class="quiz-div">
@@ -93,11 +102,10 @@
             </form>
             <div class="list-of-questions">
                 <ul>
-                    <li>ALA ALA ALA<span>x</span></li>
-                    <li>ALA ALA ALA<span>x</span></li>
-                    <li>ALA ALA ALA<span>x</span></li>
+                    <li>ALA ALA ALA<span><i class="fa-regular fa-trash-can delete-icon"></i></span></li>
+                    <li>ALA ALA ALA<span><i class="fa-regular fa-trash-can delete-icon"></i></span></li>
+                    <li>ALA ALA ALA<span><i class="fa-regular fa-trash-can delete-icon"></i></span></li>
                 </ul>
-            </div>
             </div>
         </section>
 
@@ -106,26 +114,26 @@
             <div class="footer-container">
                 <div class="footer-about box">
                     <h3>About Us</h3>
-                    <p class="about-us">We are currently a sophomore students at
-                        Polytechnic University of the Philippines - Main Campus 
-                        majoring in Computer Engineering. Our team aims to design 
-                        and develop a stunning and functional websites with clean, 
-                        elegant, and efficient code. 
+                    <p class="about-us">We are currently a sophomore students<br> at
+                        Polytechnic University of the Philippines <br> - Main Campus 
+                        majoring in Computer <br> Engineering. Our team aims to design 
+                        <br> and develop a stunning and functional <br> websites with 
+                        clean, elegant, and efficient <br> code. 
                     </p>
-                    <ul class="footer-social">
+                    <ul class="footer-social circle">
                         <li><a href="https://www.facebook.com/Charina.Carpio.Vallecera">
-                            <i class="fa-brands fa-facebook"></i></a></li>
+                            <i class="fa-brands fa-facebook icons"></i></a></li>
                         <li><a href="https://twitter.com/Theiskie">
-                            <i class="fa-brands fa-twitter"></i></a></li>
+                            <i class="fa-brands fa-twitter icons"></i></a></li>
                         <li><a href="https://www.instagram.com/liyaaaaaan_/">
                             <i class="fa-brands fa-instagram"></i></a></li>
                         <li><a href="https://github.com/irel04">
-                            <i class="fa-brands fa-github"></i></a></li>
+                            <i class="fa-brands fa-github icons"></i></a></li>
                         <li><a href="mailto: kianirel56@gmail.com">
-                            <i class="fa-solid fa-envelope"></i></a></li>
+                            <i class="fa-solid fa-envelope icons"></i></a></li>
                     </ul>
                 </div>
-                <div class="footer-contact">
+                <div class="footer-contact box">
                     <h3>Get in Touch</h3>
                     <div class="contact">
                         <p><i class="fa-solid fa-location-dot icon"></i>Anonas, Sta. Mesa, Manila</p>
