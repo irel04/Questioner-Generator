@@ -214,8 +214,8 @@ footer{
     position: relative;
     height: 300px;
     width: 310px;
-    margin-left: 80px;
-    justify-content: space-between;
+    margin: 20px 0 50px 80px;
+    justify-content: center;
 }
 .footer-container h3{
     position: relative;
@@ -257,16 +257,13 @@ footer{
     margin-top: 30px;
 }
 .footer-contact p{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: #eee;
     font-size: 14px;
 }
 .footer-contact .icon{
     font-size:16px;
-    margin-right: 5px;
-}
-.footer-links{
-    margin-right: 100px;
+    margin-right: 20px;
 }
 .footer-links .links{
     margin-top: 30px;
@@ -276,7 +273,7 @@ footer{
     margin-right: 20px;
 }
 .footer-links .links li{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-size: 14px;
     list-style: none;
 }
@@ -288,7 +285,6 @@ footer{
     color: #ff342f;
 }
 .footer-line{
-    margin-top: 70px;
     background: #fff;
 }
 .footer-logo{
