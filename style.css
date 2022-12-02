@@ -177,8 +177,8 @@ section .about-section{
     float: left;
     position: relative;
     width: 500px;
-    height: 500px;
-    margin: 40px 20px 80px 80px;
+    height: auto;
+    margin: 55px 20px 80px 80px;
     box-shadow: 20px 40px 45px rgba(0,0,0,0.1);
     z-index: -1;
 }
