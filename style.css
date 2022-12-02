@@ -23,6 +23,7 @@ body{
     background-size: cover;
 }
 
+
 /* Navigation Bar */
 .sidebar{
     position: fixed;
@@ -145,12 +146,12 @@ header .image-text .header-text{
     color: #fff
 }
 
+
 /* About Section */
-section .about-section{
-    background: #111;
-    width: 100%;
+section{
+    width: auto;
     height: auto;
-    margin-left: 180px;
+    margin-left: 50px;
 }
 .line1
 {
@@ -163,7 +164,7 @@ section .about-section{
 .about-title{
     font-size: 50px;
     font-weight: 700;
-    margin-top: 30px;
+    margin: 50px 20px 0 50px;
     text-align: center;
     text-shadow: 1px 1px 2px gray;
 }
@@ -178,20 +179,24 @@ section .about-section{
     position: relative;
     width: 500px;
     height: auto;
-    margin: 55px 20px 80px 80px;
-    box-shadow: 20px 40px 45px rgba(0,0,0,0.1);
+    margin: 50px 20px 80px 50px;
+    padding: 5px;
     z-index: -1;
+}
+.about-container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .about-container .box h3{
     position: relative;
     font-size: 32px;
-    z-index: 2;
-    padding: 40px 20px 10px 20px;
+    padding: 40px 5px 10px 5px;
 }
 .about-container .box p{
     position: relative;
     font-size: 14px;
-    padding: 5px 20px 20px 20px
+    padding: 5px 5px 10px 5px
 }
 
 
@@ -201,21 +206,21 @@ footer{
     height: auto;
     position: relative;
     background: #111;
-    padding-top: 100px;
+    padding-top: 80px;
     margin-left: 80px;
 }
 .footer-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 .footer-container .box{
     float: left;
     position: relative;
-    height: 300px;
-    width: 310px;
-    margin: 20px 0 50px 80px;
-    justify-content: center;
+    height: auto;
+    width: auto;
+    margin: 20px 0 20px 0;
+    padding: 20px;
 }
 .footer-container h3{
     position: relative;
@@ -224,18 +229,29 @@ footer{
     color: #eee;
     margin-top: 20px;
 }
+.footer-container h3::after{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background: #eeeeee;
+}  
 .footer-about .about-us{
     color: #eee;
     margin-top: 30px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 200;
+
 }
 .footer-social{
     list-style: none;
     display: flex; 
+    transition: all 0.4s ease;
 }
 .footer-social li{
-    margin: 20px 20px 0 0;
+    margin: 10px 10px 0 0;
     text-decoration: none;
 }
 .footer-social li a{
@@ -243,15 +259,15 @@ footer{
     text-align: center;
     display: inline-block;
     color: #fff;
-    font-size: 28px;
-    width: 40px;
-    height: 40px;
+    font-size: 25px;
+    width: 36px;
+    height: 36px;
     border: 1px solid #fff;
     border-radius: 50%;
     margin-top: 30px;
 }
 .footer-social li a:hover{
-    color: #fff;
+    background: linear-gradient(to right, #ff342f, #A54DFF); 
 }
 .footer-contact .contact{
     margin-top: 30px;
@@ -276,16 +292,21 @@ footer{
     margin-bottom: 15px;
     font-size: 14px;
     list-style: none;
+    transition: all 0.2s ease;
 }
 .footer-links .links li a{
     text-decoration: none;
     color: #fff;
 }
 .footer-links li a:hover{
-    color: #ff342f;
+    background: -webkit-linear-gradient(#ff342f, #A54DFF); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .footer-line{
+    margin-top: 20px;
     background: #fff;
+    opacity: 50%;
 }
 .footer-logo{
     margin: 70px 0 20px 0;
