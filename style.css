@@ -331,10 +331,12 @@ header .image-text .header-text{
 .create-div{
     float: left;
     position: relative;
-    height: auto;
-    width: auto;
+    height: 40px;
+    width: 399px;
     margin: 20px 10px 20px 0;
     padding: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 .input-title{
     position: relative;
@@ -366,7 +368,6 @@ header .image-text .header-text{
     transition: 0.2s ease;
 }
 .add-question-btn:hover{
-    border: #fff;
     color: #fff;
     background: -webkit-linear-gradient(#ff342f, #A54DFF); 
 }   
