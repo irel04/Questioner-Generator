@@ -463,20 +463,20 @@ footer{
     font-size:16px;
     margin-right: 20px;
 }
-.footer-links .links{
+.footer-links ul{
     margin-top: 30px;
 }
 .footer-links .icon{
     font-size:16px;
     margin-right: 20px;
 }
-.footer-links .links li{
+.footer-links ul li{
     margin-bottom: 15px;
     font-size: 14px;
     list-style: none;
     transition: all 0.2s ease;
 }
-.footer-links .links li a{
+.footer-links ul li a{
     text-decoration: none;
     color: #fff;
 }
