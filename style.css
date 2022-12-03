@@ -309,9 +309,7 @@ header .image-text .header-text{
 .quiz-form div{
     margin-top: 30px;
 }
-div>input{
-    width: 600px;
-}
+
 .add-btn{
     position: relative;
 }

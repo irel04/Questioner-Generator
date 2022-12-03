@@ -9,12 +9,17 @@ const body = document.querySelector("body"),
 
 const new_question = document.querySelector("#new_question");
 const add_question = document.querySelector(".add-btn");
-const list = document.querySelector(".list-of-questions ul")
-add_question.addEventListener("click", (e) =>{
-  if(add_question.value != ""){
-    e.preventDefault;
+const list = document.querySelector(".list-of-questions ul");
+add_question.addEventListener('click', (e) =>{
+  if(new_question.value != ""){
+    e.preventDefault();
     const myLi = document.createElement("li");
     myLi.innerHTML = new_question.value;
-    list.appendChild(myLi)
-  }
+    list.append(myLi);
+
+    const del = document.createElement("span");
+    del.innerHTML = "x";
+    myLi.appendChild(del);
+
+  } 
 })
