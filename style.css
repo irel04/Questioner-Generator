@@ -32,12 +32,12 @@ body{
 .home-page{
     position: absolute;
     background: #fff;
-    padding: 10px 50px 10px 50px;
+    padding: 10px 30px 10px 30px;
     box-shadow: 0 3px 5px rgba(0,0,0,0.231);
 }
 .home-page h2{
     position: relative;
-    font-size: 12vw;
+    font-size: 11vw;
     color: #E4E9F7;
     -webkit-text-stroke: 0.3vw #fff;
 }
@@ -264,10 +264,17 @@ header .image-text .header-text{
 
 /* Project CSS */
 .project-section{
+    background: #E4E9F7;
     width: auto;
     position: relative;
-    margin-left: 80px;
-    height: 100vh;
+    margin-left: 79.5px;
+    height: 200vh;
+}
+.project-section img{
+    width: 100%;
+    height: auto;
+    margin-top: -180px;
+    background-size: cover;
 }
 .project-header{
     background-color: #111;
@@ -275,13 +282,12 @@ header .image-text .header-text{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 6.5rem;
-    
+    height: 7.5rem;
 }
 .project-header h3{
     position: relative;
     top: 30px;
-    font-size: 30px;
+    font-size: 40px;
     background: -webkit-linear-gradient(#ff342f, #A54DFF); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -290,45 +296,51 @@ header .image-text .header-text{
     position: relative;
     top: 3rem;
     left: 2rem;
-    height: 40px;
+    height: 50px;
     width: 200px;
     border-radius: 1rem;
-    background-color: #FBC47D;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+    background: linear-gradient(to right, #ff342f, #A54DFF); 
 }
 .quiz-wrap h3{
+    color: #fff;
     padding-top: 7px;
+    font-weight: 400;
     text-align: center;
+}
+.quiz-wrap span{
+    color: #fff;
+    font-size: 25px;
+    margin-left: 15px;
 }
 .add-btn{
     text-decoration: none;
+    cursor: pointer;
 }
 /* Class for creating new div and input when create button is trigger*/
 .create-div{
-    background-color: #EFC895;
-    position: relative;
     top: 80px;
-    width: 250px;
     min-height: 30vh;
     left: 2rem;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    display: block;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.15);
 }
 .create-div{
     float: left;
     position: relative;
     height: auto;
     width: auto;
-    margin: 20px 20px 20px 0;
-    padding: 20px;
+    margin: 20px 10px 20px 0;
+    padding: 10px;
 }
 .input-title{
     position: relative;
     margin-top: 2rem;
     margin-left: 50px;
 }
-
-
 .delete{
     text-decoration: none;
     display: inline-block;
@@ -340,9 +352,24 @@ header .image-text .header-text{
 .add-question-btn{
     position: relative;
     left: -168px;
-    font-size: 10px;
+    font-size: 11px;
     top: 2rem;
+    padding: 2px 4px 2px 4px;
+    font-weight: 300;
+    border: solid #FEFFED;
+    background: none;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    border-style: ridge;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s ease;
 }
+.add-question-btn:hover{
+    border: #fff;
+    color: #fff;
+    background: -webkit-linear-gradient(#ff342f, #A54DFF); 
+}   
 .question_box{
     width: 200px;
 }
@@ -373,7 +400,7 @@ footer{
     float: left;
     position: relative;
     height: auto;
-    width: auto;
+    width: 250px;
     margin: 20px 0 20px 0;
     padding: 20px;
 }
