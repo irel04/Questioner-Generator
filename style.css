@@ -286,70 +286,63 @@ header .image-text .header-text{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.project-header button{
+.quiz-wrap{
     position: relative;
-    top: 30px;
-    left: 20rem;
+    top: 3rem;
+    left: 2rem;
+    height: 40px;
+    width: 200px;
     border-radius: 1rem;
-    border-color: #eee;
-    cursor: pointer;
-    height: 2.5rem;
+    background-color: #FBC47D;
 }
-.quiz-form{
-    top: 5rem;
-    position: relative;
-    left: 10rem;
-}
-.quiz-form input{
-    position: absolute;
-    left: 12rem;
-    width: 300px;
-    height: 30px;
-}
-.quiz-form div{
-    margin-top: 30px;
-}
-
-.add-btn{
-    position: relative;
-}
-.save-btn{
-    position: relative;
-    margin-left: 2rem ;
-}
-.save-add_container{
-    top: 30px;
-    position: relative;
-    margin-left: 35rem;
-}
-.list-of-questions{
-    position: relative;
-    top: 10rem;
-    left: 10rem;
-}
-.list-of-questions ul{
-    list-style: none;
-}
-.list-of-questions ul li{
-    position: relative;
-    width: 600px;
-    background-color: wheat;
-    line-height: 40px;
-    margin: 5px 0;
-}
-.list-of-questions ul li span{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50px;
+.quiz-wrap h3{
+    padding-top: 7px;
     text-align: center;
-    background-color: #ff342f;
 }
-.list-of-questions ul li .delete-icon{
-    color: #fff;
+.add-btn{
+    text-decoration: none;
+}
+/* Class for creating new div and input when create button is trigger*/
+.create-div{
+    background-color: #EFC895;
+    position: relative;
+    top: 80px;
+    width: 100vh;
+    min-height: 30vh;
+    left: 2rem;
+
+}
+.input-title{
+    position: relative;
+    margin-top: 2rem;
+    margin-left: 50px;
 }
 
 
+.delete{
+    text-decoration: none;
+    display: inline-block;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.add-question-btn{
+    position: relative;
+    left: -168px;
+    font-size: 10px;
+    top: 2rem;
+}
+.question_box{
+    width: 200px;
+}
+.question-list{
+    position: relative;
+    list-style: none;
+    margin-top: 2px;
+    left: 50px;
+    top: 35px
+}
 /* Footer */
 footer{
     width: auto;
