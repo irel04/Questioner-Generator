@@ -411,15 +411,18 @@ header .image-text .header-text{
 .delete_all{
     position: absolute;
     margin-left: 580px;
-    left: -550px;
-    top: 50px;
+    left: 2px;
+    top: 10px;
     cursor: pointer;
     border-radius: 0.5rem; 
 }
 .delete_all .del_all{
+    background: #fff;
+    border-radius: 50%;
     font-size: 40px;
 }
 .delete_all:hover{
+    border-radius: 50%;
     transform: translate(0, -1px);
     box-shadow: 10px -10px 25px 0 rgba(143,64,248,0.5),
         -10px 10px 25px 0 rgba(143,64,248,0.5);
