@@ -354,13 +354,6 @@ header .image-text .header-text{
 }
 .delete{
     position: relative;
-    text-decoration: none;
-    display: inline-block;
-    background-color: red;
-    left: 2px;
-    top: -3px;
-    width: 34px;
-    height: 34px;
     cursor: pointer;
 }
 .delete .del{
@@ -402,21 +395,17 @@ header .image-text .header-text{
     top: 30px
 }
 .delete_all{
-    position: relative;
-    display: inline-block;
-    background-color: red;
-    left: 4px;
-    top: 5px;
-    width: 120px;
-    height: 34px;
+    position: absolute;
+    margin-left: 580px;
+    left: -550px;
+    top: 50px;
     cursor: pointer;
     border-radius: 0.5rem; 
 }
-.delete_all span{
-    position: relative;
-    top: 5px;
-    left: 12px;
+.delete_all .del_all{
+    font-size: 30px;
 }
+
 
 /* Footer */
 footer{
