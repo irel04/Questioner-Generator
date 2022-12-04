@@ -236,7 +236,7 @@ header .image-text .header-text{
 }
 .about-container .box p{
     position: relative;
-    font-size: 14px;
+    font-size: 16px;
     padding: 5px 5px 10px 5px
 }
 .about-container .box .create{
@@ -280,7 +280,7 @@ header .image-text .header-text{
 .project-header h3{
     position: relative;
     top: 30px;
-    font-size: 40px;
+    font-size: 60px;
     background: -webkit-linear-gradient(#ff342f, #A54DFF); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
