@@ -15,7 +15,7 @@ function generate_field(){
   const title = document.createElement("input");
   title.type = "text";
   title.className = "input-title"
-  title.placeholder = "Enter title of the quiz";
+  title.placeholder = " Enter title of the quiz";
 
   const del_all = document.createElement("a");
   del_all.className ="delete_all";
@@ -51,7 +51,7 @@ function generate_field(){
     const question_box = document.createElement("input");
     question_box.type = "text";
     question_box.className = "question_box"
-    question_box.placeholder  = "Enter new question"
+    question_box.placeholder  = " Enter new question"
 
     div_.appendChild(question_list);
     question_list.appendChild(question_box);
