@@ -19,7 +19,7 @@ function generate_field(){
 
   const del_all = document.createElement("a");
   del_all.className ="delete_all";
-  del_all.innerHTML ='<i class="fa-solid fa-xmark"></i>';
+  del_all.innerHTML ='<i class="fa-solid fa-circle-xmark del_all"></i>';
 
 
   const div_ = document.createElement("div");
