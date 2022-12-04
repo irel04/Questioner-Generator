@@ -16,7 +16,12 @@ function generate_field(){
   title.type = "text";
   title.className = "input-title"
   title.placeholder = "Enter title of the quiz";
-  
+
+  const del_all = document.createElement("a");
+  del_all.className ="delete_all";
+  del_all.innerHTML ="<span>Delete Quiz</span>";
+
+
   const div_ = document.createElement("div");
   div_.className = "create-div";
 
@@ -25,9 +30,22 @@ function generate_field(){
   add_question.innerHTML = "Add Question";
   add_question.className = "add-question-btn";
 
+  const another_div = document.createElement("div");
+  another_div.className = "another_div"
+
   function create_question(){
     const question_list = document.createElement("li");
     question_list.className = "question-list";
+
+    const del = document.createElement("a");
+    del.className = "delete";
+    del.innerHTML = "<span>x</span>";
+
+    function delete_item(){
+      this.parentElement.remove();
+    }
+
+    del.addEventListener("click", delete_item)
 
 
     const question_box = document.createElement("input");
@@ -37,18 +55,24 @@ function generate_field(){
 
     div_.appendChild(question_list);
     question_list.appendChild(question_box);
+    question_list.appendChild(del);
   }
 
+  function remove_all(){
+    this.parentElement.remove();
+  }
 
-  quiz_input.appendChild(div_);
+  del_all.addEventListener("click", remove_all);
+
+  quiz_input.appendChild(another_div);
+  another_div.appendChild(div_)
   div_.appendChild(title);
   div_.appendChild(add_question);
-  
+  another_div.appendChild(del_all);  
 
-  add_question.addEventListener("click", create_question);
+  add_question.addEventListener("click", create_question)
 
 }
-
 add_btn.addEventListener("click", generate_field);
 
 
