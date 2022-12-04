@@ -411,8 +411,8 @@ header .image-text .header-text{
 .delete_all{
     position: absolute;
     margin-left: 580px;
-    left: -550px;
-    top: 50px;
+    left: -10px;
+    top: 40px;
     cursor: pointer;
     border-radius: 0.5rem; 
 }
