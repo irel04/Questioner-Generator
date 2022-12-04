@@ -19,7 +19,7 @@ function generate_field(){
 
   const del_all = document.createElement("a");
   del_all.className ="delete_all";
-  del_all.innerHTML ="<span>Delete Quiz</span>";
+  del_all.innerHTML ='<i class="fa-solid fa-xmark"></i>';
 
 
   const div_ = document.createElement("div");
@@ -39,7 +39,7 @@ function generate_field(){
 
     const del = document.createElement("a");
     del.className = "delete";
-    del.innerHTML = "<span>x</span>";
+    del.innerHTML = '<i class="fa-solid fa-square-xmark del"></i>';
 
     function delete_item(){
       this.parentElement.remove();
