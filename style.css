@@ -419,6 +419,11 @@ header .image-text .header-text{
 .delete_all .del_all{
     font-size: 30px;
 }
+.delete_all:hover{
+    transform: translate(0, -1px);
+    box-shadow: 10px -10px 25px 0 rgba(143,64,248,0.5),
+        -10px 10px 25px 0 rgba(143,64,248,0.5);
+}
 
 
 /* Footer */
