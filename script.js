@@ -24,7 +24,7 @@ function generate_field(){
   add_question.type = "submit";
   add_question.innerHTML = "Add Question";
   add_question.className = "add-question-btn";
-  
+
   function create_question(){
     const question_list = document.createElement("li");
     question_list.className = "question-list";

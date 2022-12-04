@@ -370,7 +370,7 @@ header .image-text .header-text{
 .add-question-btn:hover{
     color: #fff;
     background: -webkit-linear-gradient(#ff342f, #A54DFF); 
-}   
+}
 .question_box{
     width: 200px;
 }
@@ -502,4 +502,8 @@ footer{
 .bottom-line{
     margin-top: 50px;
     visibility: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
 }
