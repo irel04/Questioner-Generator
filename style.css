@@ -256,7 +256,7 @@ header .image-text .header-text{
     margin-right: 10px;
 }
 .about-container .box .create:hover{
-    background: -webkit-linear-gradient(#ff342f, #A54DFF); 
+    background: -webkit-linear-gradient(#ff342f, #A54DFF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -411,13 +411,14 @@ header .image-text .header-text{
     position: relative;
     display: inline-block;
     background: linear-gradient(to right, #ff342f, #A54DFF);
+    color: white;
     left: 4px;
     top: 5px;
     width: 120px;
     height: 34px;
     cursor: pointer;
-    border-radius: 0.5rem; 
-}
+    border-radius: 0.5rem;
+ }
 .delete_all span{
     position: relative;
     top: 5px;
