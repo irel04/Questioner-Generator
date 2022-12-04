@@ -300,7 +300,7 @@ header .image-text .header-text{
     width: 200px;
     border-radius: 1rem;
     box-shadow: 0 20px 30px rgba(0,0,0,0.15);
-    background: linear-gradient(to right, #ff342f, #A54DFF); 
+    background: linear-gradient(to right, #ff342f, #A54DFF);
 }
 .quiz-wrap h3{
     color: #fff;
@@ -316,6 +316,12 @@ header .image-text .header-text{
 .add-btn{
     text-decoration: none;
     cursor: pointer;
+}
+
+.quiz-wrap:hover{
+    transform: translate(0, -6px);
+    box-shadow: 10px -10px 25px 0 rgba(143,64,248,0.5),
+        -10px 10px 25px 0 rgba(143,64,248,0.5);
 }
 /* Class for creating new div and input when create button is trigger*/
 .create-div{
