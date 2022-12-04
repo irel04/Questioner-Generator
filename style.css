@@ -80,7 +80,7 @@ body{
     z-index: 9999;
 }
 .sidebar .text{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     color: var(--text-color);
     transition: all 0.4s ease;
@@ -236,7 +236,7 @@ header .image-text .header-text{
 }
 .about-container .box p{
     position: relative;
-    font-size: 14px;
+    font-size: 16px;
     padding: 5px 5px 10px 5px
 }
 .about-container .box .create{
@@ -279,9 +279,8 @@ header .image-text .header-text{
 }
 .project-header h3{
     position: relative;
-    font-size: 50px;
-    padding: 20px;
-    text-align: center;
+    top: 30px;
+    font-size: 40px;
     background: -webkit-linear-gradient(#ff342f, #A54DFF); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -425,8 +424,8 @@ header .image-text .header-text{
 .delete_all:hover{
     border-radius: 50%;
     transform: translate(0, -1px);
-    box-shadow: 10px -10px 25px 0 rgba(143,64,248,0.5),
-        -10px 10px 25px 0 rgba(143,64,248,0.5);
+    box-shadow: 10px -10px 25px 0 rgba(143,64,248,0.25),
+        -10px 10px 25px 0 rgba(143,64,248,0.25);
 }
 
 
