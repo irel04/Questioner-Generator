@@ -334,7 +334,7 @@ header .image-text .header-text{
     align-items: center;
     background: #fff;
     border-radius: 12px;
-    box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+    box-shadow: 0 30px 40px rgba(0,0,0,0.30);
 }
 .create-div{
     position: relative;
@@ -387,6 +387,20 @@ header .image-text .header-text{
     width: 460px;
     height: 30px;
 }
+
+.create-div::-webkit-scrollbar{
+    width: 15px;
+    border-radius: 20px;
+}
+.create-div::-webkit-scrollbar-track{
+    background-color: #efefef;
+    border-radius: 20px;
+}
+.create-div::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(#ff342f, #A54DFF);
+    border-radius: 20px;
+}
+
 .question-list{
     position: relative;
     list-style: none;
