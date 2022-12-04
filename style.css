@@ -334,7 +334,7 @@ header .image-text .header-text{
     align-items: center;
     background: #fff;
     border-radius: 12px;
-    box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+    box-shadow: 0 30px 40px rgba(0,0,0,0.30);
 }
 .create-div{
     position: relative;
@@ -387,6 +387,20 @@ header .image-text .header-text{
     width: 460px;
     height: 30px;
 }
+
+.create-div::-webkit-scrollbar{
+    width: 15px;
+    border-radius: 20px;
+}
+.create-div::-webkit-scrollbar-track{
+    background-color: #efefef;
+    border-radius: 20px;
+}
+.create-div::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(#ff342f, #A54DFF);
+    border-radius: 20px;
+}
+
 .question-list{
     position: relative;
     list-style: none;
@@ -397,13 +411,18 @@ header .image-text .header-text{
 .delete_all{
     position: absolute;
     margin-left: 580px;
-    left: 2px;
-    top: 10px;
+    left: -550px;
+    top: 50px;
     cursor: pointer;
     border-radius: 0.5rem; 
 }
 .delete_all .del_all{
     font-size: 40px;
+}
+.delete_all:hover{
+    transform: translate(0, -1px);
+    box-shadow: 10px -10px 25px 0 rgba(143,64,248,0.5),
+        -10px 10px 25px 0 rgba(143,64,248,0.5);
 }
 
 
