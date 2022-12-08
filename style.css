@@ -80,7 +80,7 @@ body{
     z-index: 9999;
 }
 .sidebar .text{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     color: var(--text-color);
     transition: all 0.4s ease;
@@ -168,25 +168,25 @@ header .image-text .header-text{
     border-radius: 6px;
     transition: all 0.4s ease;
 }
-.sidebar li a:hover{
-    background: linear-gradient(to right, #ff342f, #A54DFF); 
-}
 .sidebar li .icon{
     padding-left: 12px;
     padding-right: 12px;
     min-width: 60px;
     font-size: 25px;
-    color: #000;
 }
 .sidebar li .icon,
 .sidebar li .text{
-    color: #707070;
+    color: #111;
     transition: all 0.2s ease;
+}
+.sidebar li a:hover{
+    background: linear-gradient(to right, #ff342f, #A54DFF); 
 }
 .sidebar li a:hover .icon,
 .sidebar li a:hover .text{
     color: #fff
 }
+
 
 
 /* About Section */
@@ -346,7 +346,7 @@ header .image-text .header-text{
 .input-title{
     position: relative;
     width: 270px;
-    height: 30px;
+    height: 40px;
     margin-top: 20px;
     margin-left: 50px;
     border-style: ridge;
